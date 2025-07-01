@@ -112,9 +112,9 @@
         macos_layer {
             display-name = "MacOS";
             bindings = <
-&gresc                  &kp Q                    &kp W                &kp E                &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I            &kp O                 &kp P                             &kp BSPC
-&caps_f13 CAPSLOCK F13  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RGUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LSHIFT              &kp Z                    &kp X                &kp C                &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA        &kp DOT               &kp FSLH                          &kp RSHIFT
+&gresc                  &kp Q                    &kp W                &kp E                &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I                 &kp O                 &kp P                             &kp BSPC
+&caps_f13 CAPSLOCK F13  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RIGHT_GUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LSHIFT              &kp Z                    &kp X                &kp C                &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA             &kp DOT               &kp FSLH                          &kp RSHIFT
                                                                       &mo 3                &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
             >;
 
@@ -124,9 +124,9 @@
         windows_layer {
             display-name = "Windows";
             bindings = <
-&gresc                  &kp Q                &kp W                &kp E                    &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I                     &kp O                 &kp P                    &kp BSPC
-&caps_f13 CAPSLOCK F13  &homerow LEFT_GUI A  &homerow LEFT_ALT S  &homerow LEFT_CONTROL D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RIGHT_CONTROL K  &homerow RIGHT_ALT L  &homerow RGUI SEMICOLON  &kp SQT
-&kp LSHIFT              &kp Z                &kp X                &kp C                    &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA                 &kp DOT               &kp FSLH                 &kp RSHIFT
+&gresc                  &kp Q                &kp W                &kp E                    &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I                     &kp O                 &kp P                         &kp BSPC
+&caps_f13 CAPSLOCK F13  &homerow LEFT_GUI A  &homerow LEFT_ALT S  &homerow LEFT_CONTROL D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RIGHT_CONTROL K  &homerow RIGHT_ALT L  &homerow RIGHT_GUI SEMICOLON  &kp SQT
+&kp LSHIFT              &kp Z                &kp X                &kp C                    &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA                 &kp DOT               &kp FSLH                      &kp RSHIFT
                                                                   &mo 3                    &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
             >;
 
