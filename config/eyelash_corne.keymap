@@ -75,29 +75,34 @@
             bindings = <&kp LG(V)>;
             key-positions = <31 32>;
             timeout-ms = <100>;
+            layers = <0>;
         };
 
         cut_W {
             bindings = <&kp LC(X)>;
             key-positions = <29 30>;
             timeout-ms = <100>;
+            layers = <1>;
         };
 
         copy_W {
             bindings = <&kp LC(C)>;
             key-positions = <30 31>;
             timeout-ms = <100>;
+            layers = <1>;
         };
 
         paste_W {
             bindings = <&kp LC(V)>;
             key-positions = <31 32>;
             timeout-ms = <100>;
+            layers = <1>;
         };
 
         config {
             bindings = <&mo 6>;
             key-positions = <42 43 44>;
+            layers = <0 1>;
         };
     };
 
@@ -107,10 +112,10 @@
         macos_layer {
             display-name = "MacOS";
             bindings = <
-&gresc                  &kp Q             &kp W                &kp E                &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I            &kp O                 &kp P                     &kp BSPC
-&caps_f13 CAPSLOCK F13  &homerow LCTRL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RGUI K  &homerow RIGHT_ALT L  &homerow RCTRL SEMICOLON  &kp SQT
-&kp LSHIFT              &kp Z             &kp X                &kp C                &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA        &kp DOT               &kp FSLH                  &kp RSHIFT
-                                                               &mo 3                &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
+&gresc                  &kp Q                    &kp W                &kp E                &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I                 &kp O                 &kp P                             &kp BSPC
+&caps_f13 CAPSLOCK F13  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RIGHT_GUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LSHIFT              &kp Z                    &kp X                &kp C                &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA             &kp DOT               &kp FSLH                          &kp RSHIFT
+                                                                      &mo 3                &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -119,10 +124,10 @@
         windows_layer {
             display-name = "Windows";
             bindings = <
-&gresc                  &kp Q            &kp W                &kp E             &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I             &kp O                 &kp P                    &kp BSPC
-&caps_f13 CAPSLOCK F13  &homerow LGUI A  &homerow LEFT_ALT S  &homerow LCTRL D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RCTRL K  &homerow RIGHT_ALT L  &homerow RGUI SEMICOLON  &kp SQT
-&kp LSHIFT              &kp Z            &kp X                &kp C             &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA         &kp DOT               &kp FSLH                 &kp RSHIFT
-                                                              &mo 3             &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
+&gresc                  &kp Q                &kp W                &kp E                    &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I                     &kp O                 &kp P                         &kp BSPC
+&caps_f13 CAPSLOCK F13  &homerow LEFT_GUI A  &homerow LEFT_ALT S  &homerow LEFT_CONTROL D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RIGHT_CONTROL K  &homerow RIGHT_ALT L  &homerow RIGHT_GUI SEMICOLON  &kp SQT
+&kp LSHIFT              &kp Z                &kp X                &kp C                    &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA                 &kp DOT               &kp FSLH                      &kp RSHIFT
+                                                                  &mo 3                    &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -131,10 +136,10 @@
         gaming_layer {
             display-name = "Gaming";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W           &kp E           &kp R             &kp T                           &kp UP                         &kp Y        &kp U  &kp I      &kp O    &kp P          &kp BSPC
-&kp TAB     &kp A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                 &kp LEFT  &caps_f13 CAPS F13  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LSHIFT  &kp Z  &kp X           &kp C           &kp V             &kp B     &kp LGUI              &kp DOWN                       &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHIFT
-                                   &kp LCTRL       &kp SPACE         &kp LALT                                                       &lt 4 ENTER  &mo 5  &lt 3 DEL
+&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R      &kp T                           &kp UP                         &kp Y        &kp U  &kp I      &kp O    &kp P          &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D      &kp F      &kp G                 &kp LEFT  &caps_f13 CAPS F13  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V      &kp B     &kp LGUI              &kp DOWN                       &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHIFT
+                          &kp LCTRL  &kp SPACE  &kp LALT                                                       &lt 4 ENTER  &mo 5  &lt 3 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
