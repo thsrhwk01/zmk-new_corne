@@ -25,7 +25,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: RGUI}
+  - {t: K, h: RIGHT GUI}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '''', s: '"'}
@@ -64,7 +64,7 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: F13, h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: A, h: LGUI}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
@@ -76,7 +76,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RGUI, s: ':'}
+  - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -114,9 +114,9 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - A
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - S
+  - D
+  - F
   - G
   - $$mdi:arrow-left-bold$$
   - {t: F13, h: '$$mdi:apple-keyboard-caps$$'}
@@ -352,11 +352,16 @@ combos:
   l: [MacOS]
 - p: [31, 32]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  l: [MacOS]
 - p: [29, 30]
   k: Ctl+X
+  l: [Windows]
 - p: [30, 31]
   k: Ctl+C
+  l: [Windows]
 - p: [31, 32]
   k: Ctl+V
+  l: [Windows]
 - p: [42, 43, 44]
   k: Config
+  l: [MacOS, Windows]
