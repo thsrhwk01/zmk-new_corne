@@ -294,8 +294,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  conf:
-  - {t: '$$mdi:bluetooth-off$$', h: BT CLR ALL}
+  Config:
+  - '&trnas'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -363,8 +363,8 @@ combos:
   k: Ctl+V
   l: [Windows]
 - p: [42, 43, 44]
-  k: conf
+  k: Config
   l: [MacOS, Windows]
 - p: [45, 46, 47]
-  k: conf
+  k: Config
   l: [MacOS, Windows]
