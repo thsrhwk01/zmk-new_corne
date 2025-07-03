@@ -172,6 +172,7 @@
         };
 
         arrow_layer {
+            display-name = "Arrow";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                      &trans          &kp PG_UP  &kp PG_UP  &kp UP    &trans     &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &kp HOME   &kp LEFT   &kp DOWN  &kp RIGHT  &kp END  &trans
@@ -179,11 +180,11 @@
                         &trans  &trans  &trans                                      &trans     &trans     &trans
             >;
 
-            label = "Arrow";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         num_layer {
+            display-name = "Number";
             bindings = <
 &kp GRAVE  &kp LBKT  &kp N7  &kp N8  &kp N9         &kp N0                         &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp RBKT  &kp N4  &kp N5  &kp N6         &kp MINUS              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -191,7 +192,6 @@
                              &kp N0  &mt DOT SPACE  &trans                                         &trans  &trans  &trans
             >;
 
-            label = "Number";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
