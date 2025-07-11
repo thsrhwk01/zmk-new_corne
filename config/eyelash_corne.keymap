@@ -119,7 +119,7 @@
 &gresc                  &kp Q                    &kp W                &kp E                &kp R                  &kp T                              &kp UP                &kp Y        &kp U                   &kp I                 &kp O                 &kp P                             &kp BSPC
 &caps_f13 CAPSLOCK F13  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &homerow RIGHT_SHIFT J  &homerow RIGHT_GUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
 &kp LSHIFT              &kp Z                    &kp X                &kp C                &kp V                  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                   &kp COMMA             &kp DOT               &kp FSLH                          &kp RSHIFT
-                                                                      &mo 3                &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &mo 5                   &lt 3 DEL
+                                                                      &mo 3                &lt 4 SPACE            &lt 5 TAB                                                &lt 4 ENTER  &lt 5 SPACE             &lt 3 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -191,7 +191,7 @@
 &bt BT_CLR  &trans  &trans        &trans        &trans        &trans                                      &rgb_ug RGB_SPI                   &trans  &trans  &trans  &trans  &trans  &studio_unlock
 &trans      &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans                     &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &rgb_ug RGB_TOG                     &rgb_ug RGB_SPD                   &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans        &trans        &trans                                                                        &trans  &trans  &trans
+                                  &trans        &trans        &trans                                                                        &trans  &trans  &trans
             >;
 
             sensor-bindings = <&encoder_rgb>;
