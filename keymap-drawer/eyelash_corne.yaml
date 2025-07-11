@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   MacOS:
-  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: F13, h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-caps$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Windows:
-  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -63,7 +63,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: F13, h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-caps$$'}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -119,7 +119,7 @@ layers:
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: F13, h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-caps$$'}
   - $$mdi:arrow-right-bold$$
   - H
   - J
@@ -312,7 +312,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFR
   - RGB EFF
