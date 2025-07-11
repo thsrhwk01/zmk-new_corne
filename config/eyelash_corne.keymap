@@ -17,11 +17,15 @@
 &msc {
     acceleration-exponent = <2>;      // 0
     time-to-max-speed-ms = <500>;       // 300                   // 0
+    delay-ms = <0>;
+    trigger-period-ms = <16>;
 };
 
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <2>;
+    delay-ms = <0>;
+    trigger-period-ms = <16>;
 };
 
 / {
@@ -48,6 +52,15 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+
+        space_period: space_period {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
         };
     };
 
@@ -187,10 +200,10 @@
         num_layer {
             display-name = "Number";
             bindings = <
-&kp GRAVE  &kp LBKT  &kp N7  &kp N8  &kp N9         &kp N0                         &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp RBKT  &kp N4  &kp N5  &kp N6         &kp MINUS              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp BSLH  &kp N1  &kp N2  &kp N3         &kp EQUAL  &kp C_PP            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                             &kp N0  &mt DOT SPACE  &trans                                         &trans  &trans  &trans
+&kp GRAVE  &kp LBKT  &kp N7  &kp N8  &kp N9                   &kp N0                         &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp RBKT  &kp N4  &kp N5  &kp N6                   &kp MINUS              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp BSLH  &kp N1  &kp N2  &kp N3                   &kp EQUAL  &kp C_PP            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                             &kp N0  &space_period DOT SPACE  &trans                                         &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
