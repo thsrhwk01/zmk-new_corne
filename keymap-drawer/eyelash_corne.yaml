@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
-  Gaming:
+  Game:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -147,6 +147,55 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - Number
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
+  Game+Arr:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - $$mdi:arrow-up-bold$$
+  - O
+  - P
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-caps$$'}
+  - $$mdi:arrow-right-bold$$
+  - H
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - LGUI
+  - $$mdi:arrow-down-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-return$$', h: Arrow}
+  - Number
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Fn+Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
@@ -160,7 +209,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MacOS, h: toggle}
+  - {t: Windows, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F4
@@ -175,7 +224,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-right$$
-  - {t: Windows, h: toggle}
+  - {t: Game, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - F1
@@ -189,7 +238,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Gaming, h: toggle}
+  - {t: Game+Arr, h: toggle}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
