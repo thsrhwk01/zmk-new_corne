@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Arrow}
   - {t: '$$mdi:keyboard-tab$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
-  - Number
+  - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Gaming:
   - $$mdi:keyboard-esc$$
