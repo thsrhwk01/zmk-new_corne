@@ -413,7 +413,7 @@ combos:
   l: [Windows]
 - p: [42, 43]
   k: {t: Config, h: toggle}
-  l: [MacOS, Windows]
+  l: [MacOS, Windows, Config]
 - p: [46, 47]
   k: {t: Config, h: toggle}
-  l: [MacOS, Windows, Game, Game+Arr]
+  l: [MacOS, Windows, Game, Game+Arr, Config]
