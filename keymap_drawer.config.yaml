@@ -412,6 +412,7 @@ parse_config:
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:apple-keyboard-command$$
     PSCRN: $$mdi:printer-outline$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
     PAGE_UP:
       tap: 'PgUp'
