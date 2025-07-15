@@ -56,7 +56,9 @@
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&lt 4 DELETE>, <&to 7>;
+            bindings = <&lt 4 DELETE>, <&mo 7>;
+
+            tapping-term-ms = <50>;
         };
     };
 
@@ -103,12 +105,6 @@
             key-positions = <31 32>;
             timeout-ms = <100>;
             layers = <1>;
-        };
-
-        config_r {
-            bindings = <&mo 7>;
-            key-positions = <45 46 47>;
-            layers = <0 1>;
         };
     };
 
