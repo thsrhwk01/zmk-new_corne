@@ -103,14 +103,14 @@
             bindings = <&tog 7>;
             key-positions = <42 43>;
             require-prior-idle-ms = <200>;
-            layers = <0 1>;
+            layers = <0 1 7>;
         };
 
         config_R {
             bindings = <&tog 7>;
             key-positions = <46 47>;
             require-prior-idle-ms = <200>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2 3 7>;
         };
     };
 
