@@ -145,7 +145,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
-  - Number
+  - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Game+Arr:
   - $$mdi:keyboard-esc$$
@@ -194,7 +194,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
-  - Number
+  - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Fn+Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
