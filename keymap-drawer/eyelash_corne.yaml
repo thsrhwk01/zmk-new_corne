@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - '&td0'
+  - {t: '$$mdi:keyboard-esc$$', h: Fn+Mouse}
   - {t: '$$mdi:keyboard-space$$', h: Arrow}
   - {t: '$$mdi:keyboard-tab$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - {t: '$$mdi:keyboard-space$$', h: Number}
-  - '&td0'
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Windows:
   - $$mdi:keyboard-esc$$
   - Q
@@ -92,12 +92,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - '&td0'
+  - {t: '$$mdi:keyboard-esc$$', h: Fn+Mouse}
   - {t: '$$mdi:keyboard-space$$', h: Arrow}
   - {t: '$$mdi:keyboard-tab$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - {t: '$$mdi:keyboard-space$$', h: Number}
-  - '&td0'
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Game:
   - $$mdi:keyboard-esc$$
   - Q
@@ -146,7 +146,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - Number
-  - '&td0'
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Game+Arr:
   - $$mdi:keyboard-esc$$
   - Q
@@ -195,7 +195,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - Number
-  - '&td0'
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
   Fn+Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
@@ -239,12 +239,12 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Game+Arr, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&mkp MB3'
+  - {t: '&mkp MB3', type: held alternate}
   Arrow:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -411,3 +411,9 @@ combos:
 - p: [31, 32]
   k: Ctl+V
   l: [Windows]
+- p: [42, 43]
+  k: {t: Config, h: toggle}
+  l: [MacOS, Windows]
+- p: [46, 47]
+  k: {t: Config, h: toggle}
+  l: [MacOS, Windows, Game, Game+Arr]
