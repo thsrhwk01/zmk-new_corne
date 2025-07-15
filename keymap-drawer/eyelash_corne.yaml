@@ -389,9 +389,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [29, 30]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
@@ -411,6 +411,3 @@ combos:
 - p: [31, 32]
   k: Ctl+V
   l: [Windows]
-- p: [45, 46, 47]
-  k: Config
-  l: [MacOS, Windows]
