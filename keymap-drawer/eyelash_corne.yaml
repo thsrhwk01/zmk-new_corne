@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - Fn+Mouse
+  - '&td0'
   - {t: '$$mdi:keyboard-space$$', h: Arrow}
   - {t: '$$mdi:keyboard-tab$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - {t: '$$mdi:keyboard-space$$', h: Number}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
+  - '&td0'
   Windows:
   - $$mdi:keyboard-esc$$
   - Q
@@ -92,12 +92,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - Fn+Mouse
+  - '&td0'
   - {t: '$$mdi:keyboard-space$$', h: Arrow}
   - {t: '$$mdi:keyboard-tab$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - {t: '$$mdi:keyboard-space$$', h: Number}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
+  - '&td0'
   Game:
   - $$mdi:keyboard-esc$$
   - Q
@@ -146,7 +146,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - Number
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
+  - '&td0'
   Game+Arr:
   - $$mdi:keyboard-esc$$
   - Q
@@ -195,7 +195,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - Number
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
+  - '&td0'
   Fn+Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
@@ -239,12 +239,12 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Game+Arr, h: toggle}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: '&mkp MB3', type: held alternate}
+  - '&mkp MB3'
   Arrow:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -386,12 +386,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {type: held}
   - {type: held}
-  - {type: held alternate}
-  - {type: held alternate}
-  - {type: held alternate}
 combos:
 - p: [29, 30]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
@@ -411,9 +411,6 @@ combos:
 - p: [31, 32]
   k: Ctl+V
   l: [Windows]
-- p: [42, 43, 44]
-  k: Config
-  l: [MacOS, Windows]
 - p: [45, 46, 47]
   k: Config
   l: [MacOS, Windows]
