@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default = 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default = 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default = 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -37,10 +37,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <125>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <200>;
         };
 
         encoder_rgb: encoder_rgb {
@@ -63,10 +62,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <125>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <200>;
         };
     };
 
