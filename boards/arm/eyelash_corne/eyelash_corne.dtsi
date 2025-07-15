@@ -91,6 +91,12 @@
             pwms = <&pwm0 0 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
         };
     };
+
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
+    };
+
 };
 
 &adc {
