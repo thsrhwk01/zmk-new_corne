@@ -19,6 +19,12 @@
 
 &soft_off { hold-time-ms = <1000>; };
 
+&msc {
+};
+
+&mmv {
+};
+
 / {
     behaviors {
         caps_f13: caps_f13 {
