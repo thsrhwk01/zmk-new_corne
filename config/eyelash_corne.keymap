@@ -14,7 +14,7 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&soft_off { hold-time-ms = <1000>; };
+&soft_off { hold-time-ms = <50>; };
 
 &msc {
 };
