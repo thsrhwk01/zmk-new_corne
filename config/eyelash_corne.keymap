@@ -72,6 +72,30 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        long_bt_clr: long_bt_clr {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&macro_bt_clr>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+        };
+
+        tog_conf: tog_conf {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+        };
+
+        tog_conf2: tog_conf2 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&tog>, <&macro_rgb_tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+        };
     };
 
     combos {
@@ -120,16 +144,32 @@
         };
     };
 
+    macros {
+        macro_bt_clr: macro_bt_clr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_CLR>;
+            label = "MACRO_BT_CLR";
+        };
+
+        macro_rgb_tog: macro_rgb_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_TOG>;
+            label = "MACRO_RGB_TOG";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         macos_layer {
             display-name = "MacOS";
             bindings = <
-&kp ESCAPE                     &kp Q                    &kp W                &kp E                &kp R                  &kp T                                          &kp UP                &kp Y           &kp U                   &kp I                 &kp O                 &kp P                             &kp BSPC
-&caps_f13 CAPSLOCK LANGUAGE_1  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &homerow RIGHT_SHIFT J  &homerow RIGHT_GUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp ESCAPE                     &kp Q                    &kp W                &kp E                &kp R                  &kp T                            &kp UP                &kp Y           &kp U                   &kp I                 &kp O                 &kp P                             &kp BSPC
+&caps_f13 CAPSLOCK LANGUAGE_1  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &homerow RIGHT_SHIFT J  &homerow RIGHT_GUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
 &sft LSHIFT LSHIFT             &kp Z                    &kp X                &kp C                &kp V                  &kp B         &none              &kp DOWN              &kp N           &kp M                   &kp COMMA             &kp DOT               &kp FSLH                          &sft RSHIFT RSHIFT
-                                                                             &thumb 4 ESCAPE      &thumb 5 SPACE         &thumb 6 TAB                                                         &thumb 5 ENTER  &thumb 6 SPACE          &thumb 4 DEL
+                                                                             &thumb 4 ESCAPE      &thumb 5 SPACE         &thumb 6 TAB                                           &thumb 5 ENTER  &thumb 6 SPACE          &thumb 4 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -138,10 +178,10 @@
         windows_layer {
             display-name = "Windows";
             bindings = <
-&kp ESCAPE                     &kp Q                &kp W                &kp E                    &kp R                  &kp T                                          &kp UP                &kp Y           &kp U                   &kp I                     &kp O                 &kp P                         &kp BSPC
-&caps_f13 CAPSLOCK LANGUAGE_1  &homerow LEFT_GUI A  &homerow LEFT_ALT S  &homerow LEFT_CONTROL D  &homerow LEFT_SHIFT F  &kp G                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &homerow RIGHT_SHIFT J  &homerow RIGHT_CONTROL K  &homerow RIGHT_ALT L  &homerow RIGHT_GUI SEMICOLON  &kp SQT
+&kp ESCAPE                     &kp Q                &kp W                &kp E                    &kp R                  &kp T                            &kp UP                &kp Y           &kp U                   &kp I                     &kp O                 &kp P                         &kp BSPC
+&caps_f13 CAPSLOCK LANGUAGE_1  &homerow LEFT_GUI A  &homerow LEFT_ALT S  &homerow LEFT_CONTROL D  &homerow LEFT_SHIFT F  &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &homerow RIGHT_SHIFT J  &homerow RIGHT_CONTROL K  &homerow RIGHT_ALT L  &homerow RIGHT_GUI SEMICOLON  &kp SQT
 &sft LSHIFT LSHIFT             &kp Z                &kp X                &kp C                    &kp V                  &kp B         &none              &kp DOWN              &kp N           &kp M                   &kp COMMA                 &kp DOT               &kp FSLH                      &sft RSHIFT RSHIFT
-                                                                         &thumb 4 ESCAPE          &thumb 5 SPACE         &thumb 6 TAB                                                         &thumb 5 ENTER  &thumb 6 SPACE          &thumb 4 DELETE
+                                                                         &thumb 4 ESCAPE          &thumb 5 SPACE         &thumb 6 TAB                                           &thumb 5 ENTER  &thumb 6 SPACE          &thumb 4 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -210,10 +250,10 @@
         conf_layer {
             display-name = "Config";
             bindings = <
-&trans     &trans  &trans        &trans        &trans        &trans                                            &rgb_ug RGB_SPI                   &trans  &trans  &trans  &trans  &trans  &studio_unlock
-&trans     &trans  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &trans                           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans
-&soft_off  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &none                                     &rgb_ug RGB_SPD                   &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans        &trans        &trans                                                                              &trans  &trans  &trans
+&trans     &trans  &trans        &trans        &trans        &trans                            &rgb_ug RGB_SPI                   &trans  &trans  &trans  &trans  &trans  &studio_unlock
+&trans     &trans  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans
+&soft_off  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &none                     &rgb_ug RGB_SPD                   &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans        &trans        &trans                                                              &trans  &trans  &trans
             >;
 
             sensor-bindings = <&encoder_rgb>;
