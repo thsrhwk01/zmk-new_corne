@@ -134,12 +134,6 @@
             timeout-ms = <100>;
             layers = <1>;
         };
-
-        clr_BT {
-            bindings = <&bt BT_CLR>;
-            key-positions = <0 1 2 3>;
-            layers = <7>;
-        };
     };
 
     keymap {
