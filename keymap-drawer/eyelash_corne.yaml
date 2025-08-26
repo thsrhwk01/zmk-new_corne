@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:volume-off$$', h: Config}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -84,7 +84,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:volume-off$$', h: Config}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -344,7 +344,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Config:
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -378,7 +378,7 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB TOG
+  - {t: RGB TOG, h: Config}
   - RGB SPD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -411,9 +411,5 @@ combos:
 - p: [31, 32]
   k: Ctl+V
   l: [Windows]
-- p: [42, 43]
-  k: {t: Config, h: toggle}
-  l: [MacOS, Windows, Config]
-- p: [46, 47]
-  k: {t: Config, h: toggle}
-  l: [MacOS, Windows, Game, Game+Arr, Config]
+- p: [0, 1, 2, 3, 0, 1, 2, 3, 2, 3, 0, 1, 2, 3]
+  k: $$mdi:bluetooth-off$$
