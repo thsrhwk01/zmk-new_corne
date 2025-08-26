@@ -411,6 +411,3 @@ combos:
 - p: [31, 32]
   k: Ctl+V
   l: [Windows]
-- p: [0, 1, 2, 3]
-  k: $$mdi:bluetooth-off$$
-  l: [Config]
