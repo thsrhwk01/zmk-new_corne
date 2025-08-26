@@ -139,6 +139,7 @@
         clr_BT {
             bindings = <&bt BT_CLR>;
             key-positions = <0 1 2 3 0 1 2 3 2 3 0 1 2 3>;
+            layers = <7>;
         };
     };
 
