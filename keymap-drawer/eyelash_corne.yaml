@@ -344,7 +344,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Config:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', h: '&macro_clr_bt'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -378,7 +378,7 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mo_config2 7'
+  - '&tog_config2 7'
   - RGB SPD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -411,6 +411,3 @@ combos:
 - p: [31, 32]
   k: Ctl+V
   l: [Windows]
-- p: [0, 1, 2, 3]
-  k: $$mdi:bluetooth-off$$
-  l: [Config]
