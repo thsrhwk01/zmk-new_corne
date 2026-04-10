@@ -18,8 +18,8 @@ manifest:
     # - name: nice-view-gem
     #   remote: m165437
     #   revision: main
-    # - name: zmk-nice-oled
-    #   remote: mctechnology17
-    #   revision: main
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
   self:
     path: config
