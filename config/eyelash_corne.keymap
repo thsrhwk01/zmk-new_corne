@@ -168,7 +168,7 @@
             bindings = <
 &kp ESCAPE                     &kp Q                    &kp W                &kp E                &kp R                  &kp T                                         &kp UP                &kp Y           &kp U                   &kp I                 &kp O                 &kp P                             &kp BSPC
 &caps_f13 CAPSLOCK LANGUAGE_1  &homerow LEFT_CONTROL A  &homerow LEFT_ALT S  &homerow LEFT_GUI D  &homerow LEFT_SHIFT F  &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &homerow RIGHT_SHIFT J  &homerow RIGHT_GUI K  &homerow RIGHT_ALT L  &homerow RIGHT_CONTROL SEMICOLON  &kp SQT
-&sft LSHIFT LSHIFT             &kp Z                    &kp X                &kp C                &kp V                  &kp B         &tog_conf 7 C_MUTE              &kp DOWN              &kp N           &kp M                   &kp COMMA             &kp DOT               &kp FSLH                          &sft RSHIFT RSHIFT
+&kp LSHIFT                     &kp Z                    &kp X                &kp C                &kp V                  &kp B         &tog_conf 7 C_MUTE              &kp DOWN              &kp N           &kp M                   &kp COMMA             &kp DOT               &kp FSLH                          &kp RSHIFT
                                                                              &thumb 4 ESCAPE      &thumb 5 SPACE         &thumb 6 TAB                                                        &thumb 5 ENTER  &thumb 6 SPACE          &thumb 4 DEL
             >;
 
@@ -180,7 +180,7 @@
             bindings = <
 &kp ESCAPE                     &kp Q                &kp W                &kp E                    &kp R                  &kp T                                         &kp UP                &kp Y           &kp U                  &kp I                    &kp O                &kp P                        &kp BSPC
 &caps_f13 CAPSLOCK LANGUAGE_1  &homerow LEFT_GUI A  &homerow LEFT_ALT S  &homerow LEFT_CONTROL D  &homerow LEFT_SHIFT F  &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &homerow LEFT_SHIFT J  &homerow LEFT_CONTROL K  &homerow LEFT_ALT L  &homerow LEFT_GUI SEMICOLON  &kp SQT
-&sft LSHIFT LSHIFT             &kp Z                &kp X                &kp C                    &kp V                  &kp B         &tog_conf 7 C_MUTE              &kp DOWN              &kp N           &kp M                  &kp COMMA                &kp DOT              &kp FSLH                     &sft RSHIFT RSHIFT
+&kp LSHIFT                     &kp Z                &kp X                &kp C                    &kp V                  &kp B         &tog_conf 7 C_MUTE              &kp DOWN              &kp N           &kp M                  &kp COMMA                &kp DOT              &kp FSLH                     &kp RSHIFT
                                                                          &thumb 4 ESCAPE          &thumb 5 SPACE         &thumb 6 TAB                                                        &thumb 5 ENTER  &thumb 6 SPACE         &thumb 4 DELETE
             >;
 
