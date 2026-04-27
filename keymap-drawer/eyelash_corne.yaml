@@ -395,19 +395,19 @@ layers:
 combos:
 - p: [29, 30]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  l: [Windows]
+  l: [MacOS]
 - p: [30, 31]
   k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  l: [Windows]
+  l: [MacOS]
 - p: [31, 32]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  l: [Windows]
+  l: [MacOS]
 - p: [29, 30]
   k: Ctl+X
-  l: [MacOS]
+  l: [Windows]
 - p: [30, 31]
   k: Ctl+C
-  l: [MacOS]
+  l: [Windows]
 - p: [31, 32]
   k: Ctl+V
-  l: [MacOS]
+  l: [Windows]
