@@ -109,13 +109,13 @@
             bindings = <&kp LG(X)>;
             key-positions = <29 30>;
             timeout-ms = <100>;
-            layers = <0>;
+            layers = <1>;
         };
 
         copy_M {
             bindings = <&kp LG(C)>;
             key-positions = <30 31>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <100>;
         };
 
@@ -123,28 +123,28 @@
             bindings = <&kp LG(V)>;
             key-positions = <31 32>;
             timeout-ms = <100>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cut_W {
             bindings = <&kp LC(X)>;
             key-positions = <29 30>;
             timeout-ms = <100>;
-            layers = <1>;
+            layers = <0>;
         };
 
         copy_W {
             bindings = <&kp LC(C)>;
             key-positions = <30 31>;
             timeout-ms = <100>;
-            layers = <1>;
+            layers = <0>;
         };
 
         paste_W {
             bindings = <&kp LC(V)>;
             key-positions = <31 32>;
             timeout-ms = <100>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
