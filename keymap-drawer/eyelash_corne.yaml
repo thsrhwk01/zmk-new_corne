@@ -49,7 +49,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Arrow}
   - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fn+Mouse}
-  MacOS:
+  macOS:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -209,12 +209,12 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MacOS, h: toggle}
+  - {t: macOS, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - F4
-  - F5
-  - F6
+  - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F4, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -395,13 +395,13 @@ layers:
 combos:
 - p: [29, 30]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  l: [MacOS]
+  l: [macOS]
 - p: [30, 31]
   k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  l: [MacOS]
+  l: [macOS]
 - p: [31, 32]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  l: [MacOS]
+  l: [macOS]
 - p: [29, 30]
   k: Ctl+X
   l: [Windows]
